@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Locadora de Carros</title>
+  <link rel="stylesheet" href="style.css">
+  <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+</head>
+
+<body>
+  <div class="container">
+    <div class="header">
+      <span>Sistema Locadora de Carros</span>
+      <button onclick="openModal()" id="new">Incluir</i></button>
+    </div>
+
+    <div class="divTable">
+      <table>
+        <thead>
+          <tr>
+            <th>Placa</th>
+            <th>Modelo (Sedan/ SUV/ Hatch)</th>
+            <th>Marca</th>
+            <th>Disponibilidade (Disponivel/ Indesponivel)</th>
+            <th class="acao">Editar</th>
+            <th class="acao">Excluir</th>
+          </tr>
+        </thead>
+        <tbody>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="modal-container">
+      <div class="modal">
+        <form>
+          <label for="m-placa">Placa</label>
+          <input id="m-placa" type="text" required />
+  
+          <label for="m-modelo">Modelo</label>
+          <input id="m-modelo" type="text" required />
+  
+          <label for="m-marca">Marca</label>
+          <input id="m-marca" type="text" required />
+          
+          <label for="m-disponibilidade">Disponibilidade</label>
+          <input id="m-disponibilidade" type="text" required />
+          
+          
+          <button id="btnSalvar">Salvar</button>
+        </form>
+      </div>
+    </div>
+
+  </div>
+  <script src="script.js"></script>
+</body>
+
+</html>
